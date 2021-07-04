@@ -39,10 +39,6 @@ jobs:
         # uses: deep5050/cppcheck-action@b4d7c69b911c24817691b4b210586568a858b4c5
       uses: deep5050/cppcheck-action@v3.0
       
-    - name: flawfinder-action
-      # uses: deep5050/flawfinder-action@195872df942acc80e2c8cc05912f2cb768a34db3
-      uses: deep5050/flawfinder-action@1.0
-      
     - name: CPP Evaluation
       # uses: luke142367/cpp-evaluation-action@db42971265834124c705a5e737ad09cffe335071
       uses: luke142367/cpp-evaluation-action@0.0.1
