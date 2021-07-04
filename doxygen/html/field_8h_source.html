@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RTSoft-TestAssignment: Исходный файл include/field.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTSoft-TestAssignment
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">field.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="field_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright 2021 DPeshkoff;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Distributed under the GNU General Public License, Version 3.0. (See</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// accompanying file LICENSE)</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span>   <span class="comment">// std::transform and std::max_element</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span>      <span class="comment">// ...</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span>     <span class="comment">// fixed-width integers</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span>  <span class="comment">// std::ref</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span>    <span class="comment">// ...</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span>      <span class="comment">// ...</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span>      <span class="comment">// std::vector</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coroutine_8h.html">coroutine.h</a>&quot;</span>  <span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classMapMatrix.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="classMapMatrix.html">MapMatrix</a> {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;   <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classMapMatrix.html#a7ad462a7d9e1b7777d1c9b74e34dcffa">MapMatrix</a>(std::size_t rows, std::size_t columns);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classMapMatrix.html#a7ad462a7d9e1b7777d1c9b74e34dcffa">MapMatrix</a>(<span class="keyword">const</span> <a class="code" href="classMapMatrix.html">MapMatrix</a>&amp; map);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMapMatrix.html#a9ef1f3fab7e14b5db92a745c8983bbf0">AddLine</a>(<span class="keyword">const</span> std::string&amp; line, <span class="keyword">const</span> std::size_t&amp; row);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMapMatrix.html#adf397dab009568c202414e3de4a789e8">Traverse</a>(<span class="keyword">const</span> std::size_t&amp; row_position,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                  <span class="keyword">const</span> std::size_t&amp; column_position);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMapMatrix.html#ab27355bac6ef5f986ec26ce6bdeac45e">OutputAreas</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    std::size_t <a class="code" href="classMapMatrix.html#a2139d439653d2024fad063278b0d660a">GetMaxArea</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classMapMatrix.html#af54e19f079cc9d10cae4acdc3fcfbad4">operator&lt;&lt;</a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classMapMatrix.html">MapMatrix</a>&amp; m);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;   <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classMapMatrix.html#a90f5b1e20468a011c497fdd50db07261">   51</a></span>&#160;    std::vector&lt;std::size_t&gt; <a class="code" href="classMapMatrix.html#a90f5b1e20468a011c497fdd50db07261">areas_</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classMapMatrix.html#af81b53bbb43ddf92032af4d67775ff1b">   54</a></span>&#160;    std::vector&lt;std::vector&lt;std::pair&lt;bool, bool&gt;&gt;&gt; <a class="code" href="classMapMatrix.html#af81b53bbb43ddf92032af4d67775ff1b">map_matrix_</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classMapMatrix.html#a3c5e97f5dd53617d5a190ffa17beea24">   57</a></span>&#160;    <span class="keyword">static</span> constexpr int8_t <a class="code" href="classMapMatrix.html#a3c5e97f5dd53617d5a190ffa17beea24">dx_</a>[] = {+1, 0, -1, 0};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classMapMatrix.html#adf099f1d9374602f2b309d2876f504c3">   60</a></span>&#160;    <span class="keyword">static</span> constexpr int8_t <a class="code" href="classMapMatrix.html#adf099f1d9374602f2b309d2876f504c3">dy_</a>[] = {0, +1, 0, -1};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="structtask.html">task</a> <a class="code" href="classMapMatrix.html#a5882547dc75010780f62be7589486f23">_DFS</a>(int32_t row_position, int32_t col_position);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMapMatrix.html#a86b40ef39464201120a3ea78f7d875ec">_DFS_</a>(<span class="keyword">const</span> int32_t&amp; row_position, <span class="keyword">const</span> int32_t&amp; col_position,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;               std::size_t&amp; area);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classMapMatrix.html#aee8634c208f95caee2022f7a7615131d">_ClearPath</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassMapMatrix_html_af54e19f079cc9d10cae4acdc3fcfbad4"><div class="ttname"><a href="classMapMatrix.html#af54e19f079cc9d10cae4acdc3fcfbad4">MapMatrix::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const MapMatrix &amp;m)</div><div class="ttdoc">Оператор потокового вывода для карты.</div><div class="ttdef"><b>Definition:</b> field.cpp:68</div></div>
+<div class="ttc" id="astructtask_html"><div class="ttname"><a href="structtask.html">task</a></div><div class="ttdoc">Структура задачи для корутины.</div><div class="ttdef"><b>Definition:</b> coroutine.h:11</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a9ef1f3fab7e14b5db92a745c8983bbf0"><div class="ttname"><a href="classMapMatrix.html#a9ef1f3fab7e14b5db92a745c8983bbf0">MapMatrix::AddLine</a></div><div class="ttdeci">void AddLine(const std::string &amp;line, const std::size_t &amp;row)</div><div class="ttdoc">Процедура, осуществляющая линейную загрузка данных.</div><div class="ttdef"><b>Definition:</b> field.cpp:24</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a5882547dc75010780f62be7589486f23"><div class="ttname"><a href="classMapMatrix.html#a5882547dc75010780f62be7589486f23">MapMatrix::_DFS</a></div><div class="ttdeci">task _DFS(int32_t row_position, int32_t col_position)</div><div class="ttdoc">&quot;Корутина&quot; поиска в глубину.</div><div class="ttdef"><b>Definition:</b> field.cpp:102</div></div>
+<div class="ttc" id="aclassMapMatrix_html_aee8634c208f95caee2022f7a7615131d"><div class="ttname"><a href="classMapMatrix.html#aee8634c208f95caee2022f7a7615131d">MapMatrix::_ClearPath</a></div><div class="ttdeci">void _ClearPath()</div><div class="ttdoc">Процедура, выполняющая очистку меток пройденного пути (вторых значений пар).</div><div class="ttdef"><b>Definition:</b> field.cpp:89</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a90f5b1e20468a011c497fdd50db07261"><div class="ttname"><a href="classMapMatrix.html#a90f5b1e20468a011c497fdd50db07261">MapMatrix::areas_</a></div><div class="ttdeci">std::vector&lt; std::size_t &gt; areas_</div><div class="ttdoc">Контейнер,&amp;#160;содержащий подсчитанные площади островов.</div><div class="ttdef"><b>Definition:</b> field.h:51</div></div>
+<div class="ttc" id="acoroutine_8h_html"><div class="ttname"><a href="coroutine_8h.html">coroutine.h</a></div></div>
+<div class="ttc" id="aclassMapMatrix_html_a3c5e97f5dd53617d5a190ffa17beea24"><div class="ttname"><a href="classMapMatrix.html#a3c5e97f5dd53617d5a190ffa17beea24">MapMatrix::dx_</a></div><div class="ttdeci">static constexpr int8_t dx_[]</div><div class="ttdoc">Массив направлений по оси x - ряды матрицы.</div><div class="ttdef"><b>Definition:</b> field.h:57</div></div>
+<div class="ttc" id="aclassMapMatrix_html_af81b53bbb43ddf92032af4d67775ff1b"><div class="ttname"><a href="classMapMatrix.html#af81b53bbb43ddf92032af4d67775ff1b">MapMatrix::map_matrix_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; std::pair&lt; bool, bool &gt; &gt; &gt; map_matrix_</div><div class="ttdoc">Контейнер, содержащий карту.</div><div class="ttdef"><b>Definition:</b> field.h:54</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a2139d439653d2024fad063278b0d660a"><div class="ttname"><a href="classMapMatrix.html#a2139d439653d2024fad063278b0d660a">MapMatrix::GetMaxArea</a></div><div class="ttdeci">std::size_t GetMaxArea()</div><div class="ttdoc">Функция, выводящая максимальную площадь.</div><div class="ttdef"><b>Definition:</b> field.cpp:64</div></div>
+<div class="ttc" id="aclassMapMatrix_html_adf397dab009568c202414e3de4a789e8"><div class="ttname"><a href="classMapMatrix.html#adf397dab009568c202414e3de4a789e8">MapMatrix::Traverse</a></div><div class="ttdeci">void Traverse(const std::size_t &amp;row_position, const std::size_t &amp;column_position)</div><div class="ttdoc">Процедура,&amp;#160;осуществляющая главный проход по карте.</div><div class="ttdef"><b>Definition:</b> field.cpp:37</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a7ad462a7d9e1b7777d1c9b74e34dcffa"><div class="ttname"><a href="classMapMatrix.html#a7ad462a7d9e1b7777d1c9b74e34dcffa">MapMatrix::MapMatrix</a></div><div class="ttdeci">MapMatrix(std::size_t rows, std::size_t columns)</div><div class="ttdoc">Конструктор класса по количеству рядов и столбцов.</div><div class="ttdef"><b>Definition:</b> field.cpp:11</div></div>
+<div class="ttc" id="aclassMapMatrix_html_ab27355bac6ef5f986ec26ce6bdeac45e"><div class="ttname"><a href="classMapMatrix.html#ab27355bac6ef5f986ec26ce6bdeac45e">MapMatrix::OutputAreas</a></div><div class="ttdeci">void OutputAreas()</div><div class="ttdoc">Процедура,&amp;#160;выводящая площади всех фигур.</div><div class="ttdef"><b>Definition:</b> field.cpp:57</div></div>
+<div class="ttc" id="aclassMapMatrix_html_adf099f1d9374602f2b309d2876f504c3"><div class="ttname"><a href="classMapMatrix.html#adf099f1d9374602f2b309d2876f504c3">MapMatrix::dy_</a></div><div class="ttdeci">static constexpr int8_t dy_[]</div><div class="ttdoc">Массив направлений по оси y - столбцы матрицы.</div><div class="ttdef"><b>Definition:</b> field.h:60</div></div>
+<div class="ttc" id="aclassMapMatrix_html"><div class="ttname"><a href="classMapMatrix.html">MapMatrix</a></div><div class="ttdef"><b>Definition:</b> field.h:25</div></div>
+<div class="ttc" id="aclassMapMatrix_html_a86b40ef39464201120a3ea78f7d875ec"><div class="ttname"><a href="classMapMatrix.html#a86b40ef39464201120a3ea78f7d875ec">MapMatrix::_DFS_</a></div><div class="ttdeci">void _DFS_(const int32_t &amp;row_position, const int32_t &amp;col_position, std::size_t &amp;area)</div><div class="ttdoc">Рекурсивная процедура поиска в глубину.</div><div class="ttdef"><b>Definition:</b> field.cpp:110</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

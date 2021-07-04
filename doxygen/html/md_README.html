@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RTSoft-TestAssignment: README</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTSoft-TestAssignment
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">README </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a href="https://github.com/DPeshkoff/RTSoft-TestAssignment/actions/workflows/cmake.yml"><object type="image/svg+xml" data="https://github.com/DPeshkoff/RTSoft-TestAssignment/actions/workflows/cmake.yml/badge.svg" style="pointer-events: none;">CMake</object></a></p>
+<h1><a class="anchor" id="autotoc_md0"></a>
+RTSoft-TestAssignment</h1>
+<h4><a class="anchor" id="autotoc_md1"></a>
+Нулевое задание, RTSoftSummerSchool, лето 2021</h4>
+<p><a class="anchor" id="autotoc_md2"></a></p><h5>Пешков Дмитрий, ИУ6-43Б</h5>
+<p>Требуется написать программу, которая:</p>
+<ul>
+<li>Принимает на вход двухмерный массив нулей и единиц определенного размера;</li>
+<li>Определяет площадь острова максимального размера (в состав острова входят ячейки, содержащие 1, смежные по горизонтали или вертикали);</li>
+</ul>
+<p>Алгоритм должен предусматривать возможность распараллеливания на несколько ядер процессора.</p>
+<p>Был выбран C++ 20, соответственно, использовался компилятор g++ версии 11.1.0.</p>
+<p>Тесты реализованы с помощью GTest.</p>
+<p>На вкладке <code>Actions</code> можно посмотреть CI, собирающий проект, прогоняющий его через cppcheck и запускающий три заранее заданных теста.</p>
+<h2><a class="anchor" id="autotoc_md3"></a>
+Оформление проекта</h2>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Структура папок проекта</h3>
+<div class="fragment"><div class="line">RTSoft-TestAssignment</div>
+<div class="line">|--doxygen #документация в формате html (см. index.html)</div>
+<div class="line">|--include #заголовочные файлы </div>
+<div class="line">|  |-coroutine.h #вспомогательный заголовочный файл</div>
+<div class="line">|  |-field.h #заголовочный файл собственно класса карты</div>
+<div class="line">|</div>
+<div class="line">|--src #исходники</div>
+<div class="line">|  |-main.cpp</div>
+<div class="line">|  |-field.cpp #основная часть кода</div>
+<div class="line">|  |-CMakeLists.txt</div>
+<div class="line">|</div>
+<div class="line">|--test #тесты</div>
+<div class="line">|  |-src</div>
+<div class="line">|  |  |-test_init.cpp</div>
+<div class="line">|  |  |-test_field.cpp #запуск трех тестов</div>
+<div class="line">|  |-test</div>
+<div class="line">|  |  |-test0.txt #исходный тест, ответ - 6</div>
+<div class="line">|  |  |-test1.txt #большой тест, ответ - 27</div>
+<div class="line">|  |  |-test2.txt #заключительный тест, ответ - 10</div>
+<div class="line">|  |-CMakeLists.txt</div>
+<div class="line">|</div>
+<div class="line">|-.clang-format</div>
+<div class="line">|</div>
+<div class="line">|-.gitignore</div>
+<div class="line">|</div>
+<div class="line">|-LICENSE</div>
+<div class="line">|</div>
+<div class="line">|-CMakeLists.txt</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
+Стиль написания кода</h3>
+<p>За основу взят <a href="https://google.github.io/styleguide/cppguide.html">google style guide</a>, но с некоторыми оговорками:</p>
+<ul>
+<li>Отступ - 4 пробела (IndentWidth: 4)</li>
+<li>Разрешаются только пустые блоки на одной строке (AllowShortBlocksOnASingleLine: Empty)</li>
+<li>Не разрешаются пустые циклы на одной строке (AllowShortLoopsOnASingleLine: false)</li>
+<li>Разрешаются только пустые короткие функции на одной строке (AllowShortFunctionsOnASingleLine: Empty)</li>
+<li>Не разрешаются условные выражения на одной строке (AllowShortIfStatementsOnASingleLine: Never) </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

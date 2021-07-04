@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>RTSoft-TestAssignment: Класс MapMatrix</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">RTSoft-TestAssignment
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classMapMatrix-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс MapMatrix</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="field_8h_source.html">field.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a7ad462a7d9e1b7777d1c9b74e34dcffa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a7ad462a7d9e1b7777d1c9b74e34dcffa">MapMatrix</a> (std::size_t rows, std::size_t columns)</td></tr>
+<tr class="memdesc:a7ad462a7d9e1b7777d1c9b74e34dcffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса по количеству рядов и столбцов.  <a href="classMapMatrix.html#a7ad462a7d9e1b7777d1c9b74e34dcffa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7ad462a7d9e1b7777d1c9b74e34dcffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b9a7866cf10d3dccc07ea199df6395"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a09b9a7866cf10d3dccc07ea199df6395">MapMatrix</a> (const <a class="el" href="classMapMatrix.html">MapMatrix</a> &amp;map)</td></tr>
+<tr class="memdesc:a09b9a7866cf10d3dccc07ea199df6395"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор копирования.  <a href="classMapMatrix.html#a09b9a7866cf10d3dccc07ea199df6395">Подробнее...</a><br /></td></tr>
+<tr class="separator:a09b9a7866cf10d3dccc07ea199df6395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef1f3fab7e14b5db92a745c8983bbf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a9ef1f3fab7e14b5db92a745c8983bbf0">AddLine</a> (const std::string &amp;line, const std::size_t &amp;row)</td></tr>
+<tr class="memdesc:a9ef1f3fab7e14b5db92a745c8983bbf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Процедура, осуществляющая линейную загрузка данных.  <a href="classMapMatrix.html#a9ef1f3fab7e14b5db92a745c8983bbf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9ef1f3fab7e14b5db92a745c8983bbf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf397dab009568c202414e3de4a789e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#adf397dab009568c202414e3de4a789e8">Traverse</a> (const std::size_t &amp;row_position, const std::size_t &amp;column_position)</td></tr>
+<tr class="memdesc:adf397dab009568c202414e3de4a789e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Процедура,&#160;осуществляющая главный проход по карте.  <a href="classMapMatrix.html#adf397dab009568c202414e3de4a789e8">Подробнее...</a><br /></td></tr>
+<tr class="separator:adf397dab009568c202414e3de4a789e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27355bac6ef5f986ec26ce6bdeac45e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#ab27355bac6ef5f986ec26ce6bdeac45e">OutputAreas</a> ()</td></tr>
+<tr class="memdesc:ab27355bac6ef5f986ec26ce6bdeac45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Процедура,&#160;выводящая площади всех фигур.  <a href="classMapMatrix.html#ab27355bac6ef5f986ec26ce6bdeac45e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab27355bac6ef5f986ec26ce6bdeac45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2139d439653d2024fad063278b0d660a"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a2139d439653d2024fad063278b0d660a">GetMaxArea</a> ()</td></tr>
+<tr class="memdesc:a2139d439653d2024fad063278b0d660a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция, выводящая максимальную площадь.  <a href="classMapMatrix.html#a2139d439653d2024fad063278b0d660a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2139d439653d2024fad063278b0d660a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a5882547dc75010780f62be7589486f23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structtask.html">task</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a5882547dc75010780f62be7589486f23">_DFS</a> (int32_t row_position, int32_t col_position)</td></tr>
+<tr class="memdesc:a5882547dc75010780f62be7589486f23"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Корутина" поиска в глубину.  <a href="classMapMatrix.html#a5882547dc75010780f62be7589486f23">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5882547dc75010780f62be7589486f23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b40ef39464201120a3ea78f7d875ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a86b40ef39464201120a3ea78f7d875ec">_DFS_</a> (const int32_t &amp;row_position, const int32_t &amp;col_position, std::size_t &amp;area)</td></tr>
+<tr class="memdesc:a86b40ef39464201120a3ea78f7d875ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивная процедура поиска в глубину.  <a href="classMapMatrix.html#a86b40ef39464201120a3ea78f7d875ec">Подробнее...</a><br /></td></tr>
+<tr class="separator:a86b40ef39464201120a3ea78f7d875ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8634c208f95caee2022f7a7615131d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#aee8634c208f95caee2022f7a7615131d">_ClearPath</a> ()</td></tr>
+<tr class="memdesc:aee8634c208f95caee2022f7a7615131d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Процедура, выполняющая очистку меток пройденного пути (вторых значений пар).  <a href="classMapMatrix.html#aee8634c208f95caee2022f7a7615131d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aee8634c208f95caee2022f7a7615131d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a90f5b1e20468a011c497fdd50db07261"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::size_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a90f5b1e20468a011c497fdd50db07261">areas_</a></td></tr>
+<tr class="memdesc:a90f5b1e20468a011c497fdd50db07261"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер,&#160;содержащий подсчитанные площади островов.  <a href="classMapMatrix.html#a90f5b1e20468a011c497fdd50db07261">Подробнее...</a><br /></td></tr>
+<tr class="separator:a90f5b1e20468a011c497fdd50db07261"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81b53bbb43ddf92032af4d67775ff1b"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::pair&lt; bool, bool &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#af81b53bbb43ddf92032af4d67775ff1b">map_matrix_</a></td></tr>
+<tr class="memdesc:af81b53bbb43ddf92032af4d67775ff1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Контейнер, содержащий карту.  <a href="classMapMatrix.html#af81b53bbb43ddf92032af4d67775ff1b">Подробнее...</a><br /></td></tr>
+<tr class="separator:af81b53bbb43ddf92032af4d67775ff1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a3c5e97f5dd53617d5a190ffa17beea24"><td class="memItemLeft" align="right" valign="top">static constexpr int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#a3c5e97f5dd53617d5a190ffa17beea24">dx_</a> [] = {+1, 0, -1, 0}</td></tr>
+<tr class="memdesc:a3c5e97f5dd53617d5a190ffa17beea24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив направлений по оси x - ряды матрицы.  <a href="classMapMatrix.html#a3c5e97f5dd53617d5a190ffa17beea24">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3c5e97f5dd53617d5a190ffa17beea24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf099f1d9374602f2b309d2876f504c3"><td class="memItemLeft" align="right" valign="top">static constexpr int8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#adf099f1d9374602f2b309d2876f504c3">dy_</a> [] = {0, +1, 0, -1}</td></tr>
+<tr class="memdesc:adf099f1d9374602f2b309d2876f504c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Массив направлений по оси y - столбцы матрицы.  <a href="classMapMatrix.html#adf099f1d9374602f2b309d2876f504c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:adf099f1d9374602f2b309d2876f504c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:af54e19f079cc9d10cae4acdc3fcfbad4"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMapMatrix.html#af54e19f079cc9d10cae4acdc3fcfbad4">operator&lt;&lt;</a> (std::ostream &amp;os, const <a class="el" href="classMapMatrix.html">MapMatrix</a> &amp;m)</td></tr>
+<tr class="memdesc:af54e19f079cc9d10cae4acdc3fcfbad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор потокового вывода для карты.  <a href="classMapMatrix.html#af54e19f079cc9d10cae4acdc3fcfbad4">Подробнее...</a><br /></td></tr>
+<tr class="separator:af54e19f079cc9d10cae4acdc3fcfbad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><pre class="fragment"> \brief Класс, реализующий карту.
+</pre><p>Реализована улучшенная матричная реализация графа. Двухмерныый массив реализован в виде двух векторов; элементы представлены в виде пар элементов, где первое значение - собственно значение клетки на карте (0: вода, 1: суша), второе - статус (0: не посещено, 1: посещено) </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a7ad462a7d9e1b7777d1c9b74e34dcffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ad462a7d9e1b7777d1c9b74e34dcffa">&#9670;&nbsp;</a></span>MapMatrix() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MapMatrix::MapMatrix </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>rows</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>columns</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса по количеству рядов и столбцов. </p>
+
+</div>
+</div>
+<a id="a09b9a7866cf10d3dccc07ea199df6395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09b9a7866cf10d3dccc07ea199df6395">&#9670;&nbsp;</a></span>MapMatrix() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MapMatrix::MapMatrix </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classMapMatrix.html">MapMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>map</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор копирования. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aee8634c208f95caee2022f7a7615131d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee8634c208f95caee2022f7a7615131d">&#9670;&nbsp;</a></span>_ClearPath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MapMatrix::_ClearPath </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Процедура, выполняющая очистку меток пройденного пути (вторых значений пар). </p>
+
+</div>
+</div>
+<a id="a5882547dc75010780f62be7589486f23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5882547dc75010780f62be7589486f23">&#9670;&nbsp;</a></span>_DFS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structtask.html">task</a> MapMatrix::_DFS </td>
+          <td>(</td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>row_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int32_t&#160;</td>
+          <td class="paramname"><em>col_position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Корутина" поиска в глубину. </p>
+
+</div>
+</div>
+<a id="a86b40ef39464201120a3ea78f7d875ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b40ef39464201120a3ea78f7d875ec">&#9670;&nbsp;</a></span>_DFS_()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MapMatrix::_DFS_ </td>
+          <td>(</td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>row_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int32_t &amp;&#160;</td>
+          <td class="paramname"><em>col_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>area</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивная процедура поиска в глубину. </p>
+
+</div>
+</div>
+<a id="a9ef1f3fab7e14b5db92a745c8983bbf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef1f3fab7e14b5db92a745c8983bbf0">&#9670;&nbsp;</a></span>AddLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MapMatrix::AddLine </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>row</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Процедура, осуществляющая линейную загрузка данных. </p>
+
+</div>
+</div>
+<a id="a2139d439653d2024fad063278b0d660a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2139d439653d2024fad063278b0d660a">&#9670;&nbsp;</a></span>GetMaxArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t MapMatrix::GetMaxArea </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция, выводящая максимальную площадь. </p>
+
+</div>
+</div>
+<a id="ab27355bac6ef5f986ec26ce6bdeac45e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27355bac6ef5f986ec26ce6bdeac45e">&#9670;&nbsp;</a></span>OutputAreas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MapMatrix::OutputAreas </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Процедура,&#160;выводящая площади всех фигур. </p>
+
+</div>
+</div>
+<a id="adf397dab009568c202414e3de4a789e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf397dab009568c202414e3de4a789e8">&#9670;&nbsp;</a></span>Traverse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MapMatrix::Traverse </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>row_position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t &amp;&#160;</td>
+          <td class="paramname"><em>column_position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Процедура,&#160;осуществляющая главный проход по карте. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="af54e19f079cc9d10cae4acdc3fcfbad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af54e19f079cc9d10cae4acdc3fcfbad4">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classMapMatrix.html">MapMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор потокового вывода для карты. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a90f5b1e20468a011c497fdd50db07261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f5b1e20468a011c497fdd50db07261">&#9670;&nbsp;</a></span>areas_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::size_t&gt; MapMatrix::areas_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер,&#160;содержащий подсчитанные площади островов. </p>
+
+</div>
+</div>
+<a id="a3c5e97f5dd53617d5a190ffa17beea24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5e97f5dd53617d5a190ffa17beea24">&#9670;&nbsp;</a></span>dx_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int8_t MapMatrix::dx_[] = {+1, 0, -1, 0}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив направлений по оси x - ряды матрицы. </p>
+
+</div>
+</div>
+<a id="adf099f1d9374602f2b309d2876f504c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf099f1d9374602f2b309d2876f504c3">&#9670;&nbsp;</a></span>dy_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int8_t MapMatrix::dy_[] = {0, +1, 0, -1}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Массив направлений по оси y - столбцы матрицы. </p>
+
+</div>
+</div>
+<a id="af81b53bbb43ddf92032af4d67775ff1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81b53bbb43ddf92032af4d67775ff1b">&#9670;&nbsp;</a></span>map_matrix_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::vector&lt;std::pair&lt;bool, bool&gt; &gt; &gt; MapMatrix::map_matrix_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Контейнер, содержащий карту. </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>include/<a class="el" href="field_8h_source.html">field.h</a></li>
+<li>src/<a class="el" href="field_8cpp.html">field.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
