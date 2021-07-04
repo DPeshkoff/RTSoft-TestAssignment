@@ -43,10 +43,6 @@ jobs:
     - name: cppcheck-action
         # uses: deep5050/cppcheck-action@b4d7c69b911c24817691b4b210586568a858b4c5
       uses: deep5050/cppcheck-action@v3.0
-      
-    - name: CPP Evaluation
-      # uses: luke142367/cpp-evaluation-action@db42971265834124c705a5e737ad09cffe335071
-      uses: luke142367/cpp-evaluation-action@0.0.1
 
     - name: Test
       working-directory: ${{github.workspace}}/build
